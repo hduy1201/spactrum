@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { SideItemProps } from "@/models/side-item.ts";
+import { SideItemProps } from "@/models/site-item";
 
 export default function SideItem({ item, isHovered }: SideItemProps) {
   return (

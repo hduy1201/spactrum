@@ -1,8 +1,10 @@
 import DefaultLayout from "@/layouts/default.tsx";
-import { EditIcon, TemptAvatar } from "@/components/Icons.tsx";
+import { EditIcon } from "@/components/Icons.tsx";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import { Tab, Tabs } from "@heroui/tabs";
 import { Key, useCallback } from "react";
+import { Avatar } from "@heroui/avatar";
+import AvatarSrc from "@/assets/avatar.svg";
 
 export default function ProfilePage() {
   const { pathname } = useLocation();
@@ -17,14 +19,14 @@ export default function ProfilePage() {
         navigate(keyString);
       }
     },
-    [navigate, currentTab], // Dependencies
+    [navigate, currentTab] // Dependencies
   );
   return (
     <DefaultLayout>
       <section className="w-full h-full p-8 bg-background-300">
         <div className="w-full h-fit p-8 gap-4 rounded-[44px] bg-background-100 flex flex-col items-center">
           <div className="flex flex-col items-center gap-2.5">
-            <TemptAvatar size={80} />
+            <Avatar className="w-20 h-20 text-large" src={AvatarSrc} />
             <div className="flex items-center gap-2.5">
               <p className="font-semibold text-[14px]">Nguyen Van Teo</p>
               <EditIcon />

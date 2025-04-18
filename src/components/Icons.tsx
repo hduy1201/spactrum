@@ -3,11 +3,13 @@ import { Image } from "@heroui/image";
 
 import { IconSvgProps } from "@/types";
 import SpactrumIcon from "@/assets/3dcube.svg";
-import Avatar from "@/assets/avatar.svg";
 import {
   ArrowSwapVertical,
   Call,
   Edit2,
+  Eye,
+  EyeSlash,
+  LogoutCurve,
   Moon,
   More,
   Notification1,
@@ -19,15 +21,6 @@ import {
 
 export const Logo: React.FC<IconSvgProps> = ({ size = 40 }) => (
   <Image height={size} src={SpactrumIcon} width={size} className="min-w-10" />
-);
-
-export const TemptAvatar: React.FC<IconSvgProps> = ({ size = 48 }) => (
-  <Image
-    height={size}
-    src={Avatar}
-    width={size}
-    className="rounded-full min-w-12"
-  />
 );
 
 export const MoonFilledIcon = ({ size = 24 }: IconSvgProps) => (
@@ -99,5 +92,29 @@ export const MoreIcon = ({ size = 24 }: IconSvgProps) => (
     size={size}
     variant="Broken"
     className="min-w-6 pointer-events-none flex-shrink-0 text-secondary-300"
+  />
+);
+
+export const EyeIcon = ({ size = 24 }: IconSvgProps) => (
+  <Eye
+    size={size}
+    variant="Broken"
+    className="min-w-6 pointer-events-none flex-shrink-0 text-secondary-300"
+  />
+);
+
+export const EyeSlashIcon = ({ size = 24 }: IconSvgProps) => (
+  <EyeSlash
+    size={size}
+    variant="Broken"
+    className="min-w-6 pointer-events-none flex-shrink-0 text-secondary-300"
+  />
+);
+
+export const LogoutIcon = ({ size = 24 }: IconSvgProps) => (
+  <LogoutCurve
+    size={size}
+    variant="Broken"
+    className="min-w-6 pointer-events-none flex-shrink-0"
   />
 );
