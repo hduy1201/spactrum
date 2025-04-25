@@ -16,6 +16,7 @@ export default function SearchBar({ placeholder = "Search" }: SearchBarProps) {
         onChange={(e) => setSearch(e.target.value)}
         placeholder={placeholder}
         className="w-full pl-4 pr-12 py-3 rounded-xl border border-background-600 text-secondary-300 focus:outline-none focus:ring-1 focus:ring-background-600 placeholder:text-sm"
+        aria-label="Search messages or users"
       />
       {/* Fix vị trí icon */}
       <div className="absolute right-4 top-1/2 transform -translate-y-1/2">

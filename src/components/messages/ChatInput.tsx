@@ -32,6 +32,7 @@ export default function ChatInput({ onSendMessage }: ChatInputProps) {
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
         onKeyDown={handleKeyPress}
+        aria-label="Type a message"
       />
       <div className="flex gap-6 items-center">
         <Button isIconOnly variant="light">

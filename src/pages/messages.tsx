@@ -54,8 +54,8 @@ export default function MessagesPage() {
         ];
         return acc;
       },
-      {} as { [key: number]: Message[] },
-    ),
+      {} as { [key: number]: Message[] }
+    )
   );
 
   // Hàm xử lý gửi tin nhắn
@@ -78,13 +78,13 @@ export default function MessagesPage() {
   return (
     <DefaultLayout>
       <section className="flex h-full">
-        {/* SideBar danh sách tin nhắn */}
+        {/* SideBar danh sách tin nhắn - Giữ tỷ lệ w-1/4 */}
         <div className="w-1/4 border-r border-background-400 p-4 flex flex-col gap-8">
           <SearchBar />
           <MessageList selected={selectedUser} onSelect={setSelectedUser} />
         </div>
 
-        {/* Khung messages bên phải */}
+        {/* Khung messages bên phải - Giữ tỷ lệ w-3/4 */}
         <div className="flex flex-col w-3/4">
           <ChatHeader user={currentChat} />
           <Conversation messages={conversations[selectedUser] || []} />

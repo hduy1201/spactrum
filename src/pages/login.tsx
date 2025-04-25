@@ -146,7 +146,7 @@ export default function LoginPage() {
             </Button>
           </CardBody>
           <CardFooter className="px-6 pb-6">
-            <p className="text-center text-sm text-gray-500 dark:text-gray-400 w-full">
+            {/* <p className="text-center text-sm text-gray-500 dark:text-gray-400 w-full">
               Don’t have an account?{" "}
               <a
                 href="/signup"
@@ -154,7 +154,7 @@ export default function LoginPage() {
               >
                 Sign up
               </a>
-            </p>
+            </p> */}
           </CardFooter>
         </Card>
       </section>

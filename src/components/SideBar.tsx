@@ -8,7 +8,7 @@ export default function SideBar() {
 
   return (
     <div
-      className={`h-full border-r border-background-400 flex flex-col lg:px-6 lg:py-8 px-3 py-4 gap-10 transition-all duration-300
+      className={`h-full border-r border-background-400 flex flex-col xl:px-6 xl:py-8 px-3 py-4 gap-10 transition-all duration-300
       ${isHovered ? "w-64" : "w-20 md:w-64"} `}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

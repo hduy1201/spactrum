@@ -49,18 +49,21 @@ export default function ChatHeader({ user }: UserProps) {
         <div
           className="border border-background-400 rounded-full p-[14px] hover:bg-background-300 cursor-pointer"
           onClick={() => setIsGroupModalOpen(true)}
+          role="button"
+          aria-label="View group list"
         >
           <GroupIcon />
         </div>
         <div
           className="border border-background-400 rounded-full p-[14px] hover:bg-background-300 cursor-pointer"
           onClick={() => setIsDrawerOpen(true)}
+          role="button"
+          aria-label="More options"
         >
           <MoreIcon />
         </div>
       </div>
 
-      {/* Hero UI Modal - Danh sách nhóm */}
       <Modal isOpen={isGroupModalOpen} onOpenChange={setIsGroupModalOpen}>
         <ModalContent>
           <ModalHeader>Danh sách nhóm</ModalHeader>
@@ -75,7 +78,6 @@ export default function ChatHeader({ user }: UserProps) {
         </ModalContent>
       </Modal>
 
-      {/* Hero UI Drawer - Tùy chọn khác */}
       <Drawer
         isOpen={isDrawerOpen}
         onOpenChange={setIsDrawerOpen}
